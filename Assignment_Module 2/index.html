@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Sections</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .page-heading {
+        font-size: 1.75rem;
+        /* 75% larger than dummy text (assumed 1rem base) */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        clear: both;
+        overflow: hidden;
+    }
+
+    .section {
+        background-color: #f0f0f0;
+        border: 1px solid black;
+        padding: 15px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .section-title {
+        background-color: #4a90e2;
+        color: white;
+        font-size: 1.25rem;
+        /* 25% larger than dummy text */
+        font-weight: bold;
+        padding: 5px 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid black;
+
+    }
+
+    .section-content {
+        margin-top: 40px;
+        /* Push text down to avoid overlap with title */
+        overflow-y: scroll;
+        height: 20rem;
+    }
+
+    .chicken {
+        background-color: rgb(110, 176, 241);
+        color: #fff;
+    }
+
+    .beef {
+        background-color: #ff9999;
+        color: #fff;
+    }
+
+    .sushi {
+        background-color: #f6d94b;
+        color: #fff;
+    }
+
+    .chicken .section-title {
+        background-color: #87ceeb;
+        color: #fff;
+    }
+
+    .beef .section-title {
+        background-color: #ff6666;
+        color: #fff;
+    }
+
+    .sushi .section-title {
+        background-color: #ffbf0f;
+        color: #fff;
+    }
+
+    @media (min-width: 992px) {
+        .section {
+            width: 30%;
+            float: left;
+            margin-left: 2%;
+        }
+
+        .section:first-child {
+            margin-left: 0;
+        }
+    }
+
+    /* Tablet view (768px to 991px) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .section {
+            width: 48%;
+            float: left;
+            margin-left: 2%;
+        }
+
+        .section:first-child {
+            margin-left: 0;
+        }
+
+        .section:nth-child(3) {
+            width: 100%;
+            margin-left: 0;
+            float: none;
+            clear: both;
+        }
+    }
+
+    /* Mobile view (767px and below) */
+    @media (max-width: 767px) {
+        .section {
+            width: 100%;
+            float: none;
+            margin-left: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="page-heading">Our Menu</h1>
+        <div class="row">
+            <div class="section chicken">
+                <div class="section-title">Chicken</div>
+                <div class="section-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="section beef">
+                <div class="section-title">Beef</div>
+                <div class="section-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="section sushi">
+                <div class="section-title">Sushi</div>
+                <div class="section-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
